@@ -1,10 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js'
+const NEXT_PUBLIC_SUPABASE_URL="https://iogttauweyzyiqrknveu.supabase.co"
+const NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvZ3R0YXV3ZXl6eWlxcmtudmV1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMTAzNTcsImV4cCI6MjA3MDU4NjM1N30.UNQu1_e_lIxKIAlZLEAMYLCToRTcK3y0lrXhHtNkq2s"
 
-const supabaseUrl = process.env.SUPABASE_URL || "your_supabase_url";
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || "your_supabase_anon_key";
+const supabaseUrl = NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error("Missing Supabase configuration. Please set SUPABASE_URL and SUPABASE_ANON_KEY in your environment.");
-}
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)

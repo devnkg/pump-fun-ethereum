@@ -1,7 +1,6 @@
-
 # Pump-Fun-Ethereum DApp
 
-A frontend for the **Pump-Fun-Ethereum** DApp project, powered by **Vite**.
+A frontend for the **Pump-Fun-Ethereum** DApp project.
 
 ---
 
@@ -53,3 +52,4 @@ Open the **Local URL** in your browser to view the app.
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
