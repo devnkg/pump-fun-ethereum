@@ -10,7 +10,7 @@ import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol
 contract Market is ReentrancyGuard {
     // --- Config ---
     uint256 public constant SCALE = 1e18;
-    uint256 public treasuryFeeBps = 100;
+    uint256 public treasuryFeeBps = 200;
     address public treasury;
     uint256 public virtualEth = 30 ether;
     uint256 public tokensAvailable = 1073000191 ether;
